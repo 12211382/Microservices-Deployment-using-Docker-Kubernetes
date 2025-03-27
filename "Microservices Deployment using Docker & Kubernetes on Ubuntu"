@@ -1,22 +1,22 @@
-✅ 1. Setting Up Ubuntu VM in VMware
+1. Setting Up Ubuntu VM in VMware
 Downloaded & Installed Ubuntu 20.04 LTS
 Configured Storage (50GB), RAM (4GB), and Networking
 Completed Ubuntu installation & system updates
 
 sudo apt update && sudo apt upgrade -y
-✅ 2. Installing Docker for Containerized Applications
+2. Installing Docker for Containerized Applications
 Installed Docker & Verified Installation
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
-✅ 3. Installing Kubernetes (MicroK8s) for Orchestration
+3. Installing Kubernetes (MicroK8s) for Orchestration
 Installed MicroK8s
 
 sudo snap install microk8s --classic
 Checked Kubernetes Status
 
 sudo microk8s status --wait-ready
-✅ 4. Enabling Kubernetes Services
+4. Enabling Kubernetes Services
 Enabled Kubernetes Dashboard
 
 microk8s enable dashboard
@@ -32,7 +32,7 @@ microk8s enable istio
 Checked Running Kubernetes Services
 
 sudo microk8s kubectl get all --all-namespaces
-✅ 5. Accessing Kubernetes Dashboard
+5. Accessing Kubernetes Dashboard
 Started Kubernetes Proxy for Dashboard
 
 microk8s dashboard-proxy
